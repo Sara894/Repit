@@ -44,6 +44,14 @@ namespace Repit
             if (n == 1) return 1;//базовый вариант
             return n * Factorial(n - 1);
         }
+
+        static int Fibonachi(int n)
+        {
+            if (n == 0 || n == 1) return n;
+
+            return Fibonachi(n - 1) + Fibonachi(n - 2);
+        }
+
         static void Main(string[] args)
         {
             int n = 900;
@@ -60,6 +68,8 @@ namespace Repit
             Sum(nums, 89);
             int nf = Factorial(4);
             Console.WriteLine($"Факториал 4:{nf}");
+            int fib4 = Fibonachi(4);
+            Console.WriteLine($"Fibonachi{fib4}");
         }
     }
 }
