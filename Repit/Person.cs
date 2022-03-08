@@ -28,7 +28,7 @@ namespace Repit
       
         }
 
-        public Person(string name) : this(name, 18)
+        public Person(string name) : this(name, 18,"Microsoft")
         {
            
         }

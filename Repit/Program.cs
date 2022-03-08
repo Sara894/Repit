@@ -20,7 +20,7 @@ namespace Repit
             John.Print();
             Person tom = new Person {name = "Tom",age = 19 };//inicializator
             tom.Print();
-            Person programmer = new Person { name = "Mila", age = 19, company = { title = "Microsoft" } };
+            Person programmer = new Person { name = "Mila-Programmer", age = 19, company = { title = "Microsoft" } };
             programmer.Print();
             //инициализатор только для пабик полей
             //инициализатор выполняется после конструктора
