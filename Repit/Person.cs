@@ -15,9 +15,14 @@ namespace Repit
             name = "Lana Terner";
             age = 30;
         }
-        public void Print()
+        public Person(string name, int age)
         {
-            Console.WriteLine($"Имя {name}, возраст : {age}");
+            Console.WriteLine("Создание объекта Человек с именем и возрастом");
+            this.name = name;
+            this.age = age;
         }
+        public void Print() => Console.WriteLine($"Имя {name}, возраст : {age}");
+
+        
     };
 }
