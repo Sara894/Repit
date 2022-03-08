@@ -28,7 +28,7 @@ namespace Repit
             int sumResult;
             Sum(900, n, out sumResult);
             Console.WriteLine($"Sum: {sumResult}");
-            GetRectangleData(20, 30, out int area, out int perimetr);
+            GetRectangleData(20, 30, out var area, out var perimetr);
             Console.WriteLine($"area: {area}");
             Console.WriteLine($"perimetr:{perimetr}");
         }
