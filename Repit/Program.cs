@@ -52,6 +52,22 @@ namespace Repit
             return Fibonachi(n - 1) + Fibonachi(n - 2);
         }
 
+
+        static int Fibonachi2(int n)
+        {
+            int result = 0;
+            int b = 1;
+            int tmp;
+
+            for (int i = 0; i < n; i++)
+            {
+                tmp = result;
+                result = b;
+                b += tmp;
+            }
+            return result;
+        }
+
         static void Main(string[] args)
         {
             int n = 900;
@@ -69,7 +85,9 @@ namespace Repit
             int nf = Factorial(4);
             Console.WriteLine($"Факториал 4:{nf}");
             int fib4 = Fibonachi(4);
-            Console.WriteLine($"Fibonachi{fib4}");
+            Console.WriteLine($"Fibonachi {fib4}");
+            int fib4_2 = Fibonachi2(4);
+            Console.WriteLine($"Fibonachi  {fib4_2}");
         }
     }
 }
