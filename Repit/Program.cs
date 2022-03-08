@@ -17,7 +17,7 @@ namespace Repit
         //модификатор in значит что
         //параметр передаем по ссылке
         //при этом в теле метода он неизменяем
-        static void GetRectangleData(int width, int height,
+        static void GetRectangleData(in int width,in int height,
             out int rectArea, out int rectPerimetr)
         {
             rectArea = width * height;
