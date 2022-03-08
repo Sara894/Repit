@@ -14,7 +14,9 @@ namespace Repit
         {
             sum = a + b;
         }
-
+        //модификатор in значит что
+        //параметр передаем по ссылке
+        //при этом в теле метода он неизменяем
         static void GetRectangleData(int width, int height,
             out int rectArea, out int rectPerimetr)
         {
