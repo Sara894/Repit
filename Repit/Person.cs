@@ -39,6 +39,12 @@ namespace Repit
             this.age = age;
             this.company = new Company();
         }
+
+        public void Deconstruct(out string name, out int age)
+        {
+            name = this.name;
+            age = this.age;
+        }
         public void Print() => Console.WriteLine($"Имя {name}, возраст : {age}");
 
         

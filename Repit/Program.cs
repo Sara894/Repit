@@ -22,6 +22,9 @@ namespace Repit
             tom.Print();
             Person programmer = new Person { name = "Mila-Programmer", age = 19, company = { title = "Microsoft" } };
             programmer.Print();
+            (string name1, int age) = programmer;
+            Console.WriteLine(name1);
+            Console.WriteLine(age);
             //инициализатор только для пабик полей
             //инициализатор выполняется после конструктора
             //поэтому если в конструторе по умолчанию
