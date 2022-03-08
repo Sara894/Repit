@@ -4,7 +4,7 @@ namespace Repit
 {
     class Program
     {
-        static void Increment(int n)
+        static void Increment(ref int n)
         {
             n++;
             Console.WriteLine($"Increments:{n}");
@@ -12,7 +12,7 @@ namespace Repit
         static void Main(string[] args)
         {
             int n = 900;
-            Increment(n);
+            Increment(ref n);
         }
     }
 }
