@@ -38,6 +38,12 @@ namespace Repit
         {
             Console.WriteLine(nums[0] + y);
         }
+
+        static int Factorial(int n)
+        {
+            if (n == 1) return 1;//базовый вариант
+            return n * Factorial(n - 1);
+        }
         static void Main(string[] args)
         {
             int n = 900;
@@ -52,6 +58,8 @@ namespace Repit
             int[] nums = { 23, 45 };
             Sum(100,nums);
             Sum(nums, 89);
+            int nf = Factorial(4);
+            Console.WriteLine($"Факториал 4:{nf}");
         }
     }
 }
