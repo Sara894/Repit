@@ -23,6 +23,21 @@ namespace Repit
             rectArea = width * height;
             rectPerimetr = (width + height) * 2;
         }
+
+        static void Sum(int y,params int[] nums)
+        {
+            int result = 0;
+            foreach (var n in nums)
+            {
+                result += n;
+            }
+            Console.WriteLine(result + y);
+        }
+
+        static void Sum(int[] nums, int y)
+        {
+            Console.WriteLine(nums[0] + y);
+        }
         static void Main(string[] args)
         {
             int n = 900;
@@ -33,6 +48,10 @@ namespace Repit
             GetRectangleData(20, 30, out var area, out var perimetr);
             Console.WriteLine($"area: {area}");
             Console.WriteLine($"perimetr:{perimetr}");
+            Sum(1, 2, 3, 4, 5);
+            int[] nums = { 23, 45 };
+            Sum(100,nums);
+            Sum(nums, 89);
         }
     }
 }
