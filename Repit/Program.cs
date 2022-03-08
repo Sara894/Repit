@@ -14,6 +14,7 @@ namespace Repit
             Gena.name = "Геннадий";
             Gena.age = 14;
             Console.WriteLine(Gena.age + Gena.name);
+            Person Lena = new("lena");//C# 9.0
         }
     }
 }
