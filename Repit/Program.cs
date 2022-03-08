@@ -10,7 +10,7 @@ namespace Repit
             Console.WriteLine($"Increments:{n}");
         }
 
-        static int Sum(int a, int b, out int sum)
+        static void Sum(int a, int b, out int sum)
         {
             sum = a + b;
         }
@@ -18,9 +18,9 @@ namespace Repit
         {
             int n = 900;
             Increment(ref n);
-            int sum;
-            Sum(100, 111,out sum);
-            Console.WriteLine($"Сумма: {sum}");
+            int sumResult;
+            Sum(900, n, out sumResult);
+            Console.WriteLine($"Sum: {sumResult}");
         }
     }
 }
