@@ -25,6 +25,9 @@ namespace Repit
             (string name1, int age) = programmer;
             Console.WriteLine(name1);
             Console.WriteLine(age);
+
+            (_, int age1) = Gena;
+            Console.WriteLine(age1);
             //инициализатор только для пабик полей
             //инициализатор выполняется после конструктора
             //поэтому если в конструторе по умолчанию
