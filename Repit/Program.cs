@@ -18,6 +18,8 @@ namespace Repit
             Lena.Print();
             Person John = new Person();
             John.Print();
+            Person tom = new Person {name = "Tom",age = 19 };//inicializator
+            tom.Print();
         }
     }
 }
