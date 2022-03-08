@@ -9,10 +9,17 @@ namespace Repit
             n++;
             Console.WriteLine($"Increments:{n}");
         }
+
+        static int Sum(int a, int b)
+        {
+            return a + b;
+        }
         static void Main(string[] args)
         {
             int n = 900;
             Increment(ref n);
+            int sum = Sum(900, n);
+            Console.WriteLine($"Сумма: {sum}");
         }
     }
 }
