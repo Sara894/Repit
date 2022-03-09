@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Repit
 {
-    class State
+    class State//по умолчанию internal
     {
         //все равно что private string defaultVar
         string defaultVar = "Undefined";
@@ -21,6 +21,9 @@ namespace Repit
         protected internal string protectedInternalVar = "protectedInternalVar";
         //достпуно в любом месте текущего проекта и в других проектах тоже
         public string publicVar = "publicVar";
+
+        //private по умолчанию
+        void Print() => Console.WriteLine($"{protectedVar}");
 
     }
 }
