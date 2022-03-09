@@ -23,7 +23,19 @@ namespace Repit
         public string publicVar = "publicVar";
 
         //private по умолчанию
-        void Print() => Console.WriteLine($"{protectedVar}");
+        void Print() => Console.WriteLine($"{defaultVar}");
+        //доступен производным классам в данном проекте и себе
+        private protected void privateProtectedPrint() => Console.WriteLine($"{protectedPrivateVar}");
+        //доступен производным классам в этом проекте
+        protected void protectedPrint() => Console.WriteLine($"{protectedVar}");
+        //достпуен из любой точки в данной сборке
+        internal void internalPrint() => Console.WriteLine($"{internalVar}");
+        //доступен из любой точки в данной сборке и производным классам в других сборках
+        internal protected void internalProtectedPrint() => Console.WriteLine($"{protectedInternalVar}");
+        //доступен в любом месте данной программы и в других сборках тоже
+        public void publicPrint() => Console.WriteLine($"{publicVar}");
+
+
 
     }
 }
